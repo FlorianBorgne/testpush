@@ -1,68 +1,68 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/buttons.dart';
-import 'package:photo_view/photo_view.dart';
+import 'package:flutter_application_1/side_bar.dart';
 
+//https://docs.flutter.dev/development/ui/layout
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  static const primayColor = Color(0xFF002F57);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-            appBar: AppBar(
-              title: const Text('Citadelle'),
-            ),
-            drawer: Drawer(
-              child: ListView(
-                padding: EdgeInsets.zero,
-                children: const <Widget>[
-                  DrawerHeader(
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                    ),
-                    child: Text(
-                      'Nom du Bâtiment',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 24,
-                      ),
-                    ),
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.message),
-                    title: Text('Messages'),
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.account_circle),
-                    title: Text('Profile'),
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.settings),
-                    title: Text('Settings'),
-                  ),
-                ],
+      home: Scaffold(
+        appBar: AppBar(
+          //color: #002F57
+          title: Row(
+            children: [
+              Flexible(
+                flex: 2,
+                child: Image(
+                  image: AssetImage('assets/images/logo_upjv.png'),
+                  width: 60,
+                  height: 60,
+                ),
               ),
-            ),
-            body: Center(
-                child: InteractiveViewer(
-                    boundaryMargin: const EdgeInsets.all(10.0),
-                    // minScale: 0.1,
-                    maxScale: 1.6,
-                    child: Stack(
-                      children: [
-                        Positioned(
-                          bottom: 10,
-                          right: 40,
-                          child: Image(
-                            image: AssetImage('assets/images/GoogleMaps.png'),
-                          ),
-                        ),
-                        ButtonsList(),
-                      ],
-                    )))));
+              Flexible(
+                fit: FlexFit.loose,
+                child: SizedBox(
+                  width: 900,
+                ),
+              ),
+              Flexible(flex: 3, child: Text('Pôle Citadelle')),
+            ],
+          ),
+          backgroundColor: primayColor,
+        ),
+        // drawer: SideBar(),
+        body: Row(
+          children: [
+            SideBar(),
+            InteractiveViewer(
+                boundaryMargin: const EdgeInsets.all(0.0),
+                // minScale: 0.1,
+                maxScale: 1.6,
+                child: Image(
+                  image: AssetImage('assets/images/GoogleMaps.png'),
+                )),
+          ],
+        ),
+      ),
+      //ButtonsList(),
+    );
   }
 }
 /**
+ * SizedBox(
+                width: 60.0,
+                height: 60.0,
+                child: Image(
+                  image: AssetImage('assets/images/logo_upjv.png'),
+                ),
+              ),
+ * 
+ * 
  * body: Stack(
             fit: StackFit.loose,
             children: [

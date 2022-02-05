@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'side_bar.dart';
 
 class ButtonsList extends StatelessWidget {
-  const ButtonsList({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(
