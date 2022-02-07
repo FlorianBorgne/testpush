@@ -37,6 +37,23 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
+    // Import the functions you need from the SDKs you need
+  import { initializeApp } from "firebase/app";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBHlRvcid_dt0hkAsZHahPBceY-lJYQZF0",
+    authDomain: "bdd-24adb.firebaseapp.com",
+    projectId: "bdd-24adb",
+    storageBucket: "bdd-24adb.appspot.com",
+    messagingSenderId: "701323935703",
+    appId: "1:701323935703:web:afeebdaf5a85c8573a9592"
+  };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
     function loadMainDartJs() {

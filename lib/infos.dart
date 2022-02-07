@@ -1,3 +1,0 @@
-class Infos {
-  batimentA() {}
-}
