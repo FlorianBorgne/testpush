@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'batiment.dart';
-import 'package:photo_view/photo_view.dart';
 
 class Body extends StatefulWidget {
   const Body({Key? key}) : super(key: key);
@@ -35,7 +34,7 @@ class _BodyState extends State<Body> {
                     ),
                     Positioned(
                       bottom: 175,
-                      right: 540,
+                      right: 545,
                       width: 20.0,
                       height: 20.0,
                       child: ElevatedButton(
@@ -53,8 +52,8 @@ class _BodyState extends State<Body> {
                       ),
                     ),
                     Positioned(
-                      bottom: 180,
-                      right: 480,
+                      bottom: 175,
+                      right: 592,
                       width: 20.0,
                       height: 20.0,
                       child: ElevatedButton(
@@ -73,7 +72,7 @@ class _BodyState extends State<Body> {
                     ),
                     Positioned(
                       bottom: 220,
-                      right: 518,
+                      right: 632,
                       width: 20.0,
                       height: 20.0,
                       child: ElevatedButton(
@@ -92,7 +91,7 @@ class _BodyState extends State<Body> {
                     ),
                     Positioned(
                       bottom: 210,
-                      right: 470,
+                      right: 590,
                       width: 20.0,
                       height: 20.0,
                       child: ElevatedButton(
@@ -111,7 +110,7 @@ class _BodyState extends State<Body> {
                     ),
                     Positioned(
                       bottom: 250,
-                      right: 450,
+                      right: 560,
                       width: 20.0,
                       height: 20.0,
                       child: ElevatedButton(
@@ -130,7 +129,7 @@ class _BodyState extends State<Body> {
                     ),
                     Positioned(
                       bottom: 275,
-                      right: 420,
+                      right: 530,
                       width: 20.0,
                       height: 20.0,
                       child: ElevatedButton(
@@ -149,7 +148,7 @@ class _BodyState extends State<Body> {
                     ),
                     Positioned(
                       bottom: 299,
-                      right: 400,
+                      right: 515,
                       width: 20.0,
                       height: 20.0,
                       child: ElevatedButton(
@@ -168,7 +167,7 @@ class _BodyState extends State<Body> {
                     ),
                     Positioned(
                       bottom: 325,
-                      right: 430,
+                      right: 545,
                       width: 20.0,
                       height: 20.0,
                       child: ElevatedButton(
@@ -187,7 +186,7 @@ class _BodyState extends State<Body> {
                     ),
                     Positioned(
                       bottom: 200,
-                      right: 340,
+                      right: 455,
                       width: 20.0,
                       height: 20.0,
                       child: ElevatedButton(
@@ -206,7 +205,7 @@ class _BodyState extends State<Body> {
                     ),
                     Positioned(
                       bottom: 510,
-                      right: 520,
+                      right: 640,
                       width: 20.0,
                       height: 20.0,
                       child: ElevatedButton(

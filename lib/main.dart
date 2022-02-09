@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'body.dart';
 
-//https://docs.flutter.dev/development/ui/layout
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -29,7 +28,6 @@ class MyApp extends StatelessWidget {
             backgroundColor: primayColor,
             centerTitle: true,
           ),
-          // drawer: SideBar(),
           body: Body()),
     );
   }
