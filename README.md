@@ -9,7 +9,10 @@ L’objectif principal de ce projet est de se former à la gestion de projet sou
 
 ### 3. Tester le projet
 Pour tester le projet:
- - Faire un git clone https://github.com/FlorianBorgne/testpush.git dans un répertoire de votre choix.
+ - Faire un 
+    > git clone https://github.com/FlorianBorgne/testpush.git 
+    
+    dans un répertoire de votre choix.
  - Une fois le projet ouvert, dans le terminal taper:
     > flutter pub get
     
