@@ -17,7 +17,6 @@ class _BodyState extends State<Body> {
     return Container(
       width: size.width,
       height: size.height,
-      //decoration: BoxDecoration(color: Colors.lightGreen),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center, //Of Row
         children: [
